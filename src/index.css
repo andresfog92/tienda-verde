@@ -244,3 +244,74 @@ details p { color: var(--suave); margin-top: 0.7rem; }
   .section { padding: 4.5rem 5%; }
 }
 .cart-btn span { animation: pulso 0.4s; }
+/* Catálogo con API */
+.api-form {
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  background: var(--card);
+  padding: 1.4rem;
+  border-radius: 20px;
+  border: 1px solid rgba(61, 220, 132, 0.25);
+}
+.api-form input,
+.api-form select {
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: var(--bg);
+  color: var(--texto);
+  font: inherit;
+}
+.api-form input:focus,
+.api-form select:focus {
+  outline: 2px solid var(--verde);
+}
+.api-form button {
+  grid-column: 1 / -1;
+}
+.api-msg {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--oro);
+}
+.api-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 1.2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.api-card {
+  background: var(--card);
+  padding: 1.2rem;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: transform 0.3s, border-color 0.3s;
+}
+.api-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--verde);
+}
+.api-card small {
+  color: var(--suave);
+}
+.api-card h3 {
+  margin: 0.3rem 0 0.6rem;
+  font-size: 1.1rem;
+}
+.api-card .thc {
+  display: inline-block;
+  background: rgba(61, 220, 132, 0.15);
+  color: var(--verde);
+  padding: 0.15rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.api-card .price {
+  display: block;
+  margin-top: 0.8rem;
+}

@@ -19,7 +19,10 @@ function Navbar({ cantidad, onAbrir }: Props) {
       <a href="#inicio" className="logo">
         🌿 Verde<span>Andino</span>
       </a>
-      <nav>
+     {
+      
+     } <nav>
+        <a href="#catalogo">Catálogo</a>
         <a href="#beneficios">Beneficios</a>
         <a href="#productos">Tienda</a>
         <a href="#opiniones">Opiniones</a>

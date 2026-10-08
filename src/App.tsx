@@ -7,6 +7,7 @@ import Beneficios from "./components/Beneficios";
 import Tienda from "./components/Tienda";
 import Opiniones from "./components/Opiniones";
 import Faq from "./components/Faq";
+import Catalogo from "./components/Catalogo";
 import Footer from "./components/Footer";
 import Carrito from "./components/Carrito";
 
@@ -72,6 +73,7 @@ function App() {
       <Tienda onAgregar={agregar} />
       <Opiniones />
       <Faq />
+      <Catalogo />
       <Footer />
       <Carrito
         abierto={carritoAbierto}
