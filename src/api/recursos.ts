@@ -8,11 +8,11 @@ export type Recurso = {
 
 export type NuevoRecurso = Omit<Recurso, "id">;
 
-const API_URL = import.meta.env.VITE_API_URL ?? "http://localhost:3001";
+const API_URL = import.meta.env.API_URL ?? "http://localhost:3001";
 
 // GET: trae la lista de productos
 export async function obtenerRecursos(): Promise<Recurso[]> {
-  const respuesta = await fetch(`${API_URL}/recursos`);
+  const respuesta = await fetch(`${API_URL}/api/marihuana`);
   if (!respuesta.ok) {
     throw new Error(`Error ${respuesta.status} al cargar los productos`);
   }
@@ -21,7 +21,7 @@ export async function obtenerRecursos(): Promise<Recurso[]> {
 
 // POST: crea un producto nuevo
 export async function crearRecurso(nuevo: NuevoRecurso): Promise<Recurso> {
-  const respuesta = await fetch(`${API_URL}/recursos`, {
+  const respuesta = await fetch(`${API_URL}/api/marihuana`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(nuevo),
